@@ -4,7 +4,9 @@ FROM php:${VERSION}-fpm-alpine AS dev
 
 RUN apk update && \
     apk add --no-cache --virtual dev-deps git autoconf gcc g++ make && \
-    apk add --no-cache zlib-dev libzip-dev
+    apk add --no-cache zlib-dev libzip-dev 
+    
+RUN apk --no-cache add nodejs yarn --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 
 RUN pecl install xdebug && \
     docker-php-ext-enable xdebug && \

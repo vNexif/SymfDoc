@@ -23,4 +23,4 @@ services:
       target: dev
     volumes:
       - .:/app
-    command: sh -c 'composer update && composer install --no-interaction --optimize-autoloader && php-fpm'
+    command: sh -c 'composer update && composer install --no-interaction --optimize-autoloader && yarn && yarn install && php-fpm'
