@@ -1,5 +1,7 @@
+
+<h1>Sample Symfony project based on docker</h1>
+
 ![](https://github.com/vNexif/SymfDoc/actions/workflows/docker-comp.yml/badge.svg)
-#Sample Symfony project based on docker
 
 ### 1.Setup Docker and Docker-Compose:
 [Docker Install](https://docs.docker.com/compose/install/) <- Instalation Guide @ [Docker Docs](https://docs.docker.com)
